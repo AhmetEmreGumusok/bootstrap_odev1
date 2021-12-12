@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müzik Dükkanım</title>
+    <!-- Bootstrap 5.1 kullanıldı -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <!-- navbar-expand-lg yi sm yaptım daha fazla küçültünce toggler geliyor -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger" href="index.html">Müzik Dükkanım</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-light">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="urunler.html">Ürünlerimiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- içerik başlar -->
+    <main class="container">
+        <div class="pt-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-1">
+                <h1 class="display-5 text-success text-center">Ürünlerimiz</h1>
+                <!-- 
+                row-cols-* bir satırdaki col sayısı belirler
+                farklı ekranlarda da belirlemek için row-cols-md-2 gibi kullanılabilir
+                buradaki sayı kaç sutun dolduracağı değil satırda kaç sutun olacağı ile ilgili
+                -->
+                <!-- g-3 ifadesi guter (oluk-boşluk) olarak kullanılıyor margin yerine geçiyor
+                gx-* ile x ekseninde gy-* ile y ekseninde boşluk yapılabilir -->
+                <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-3 mt-1">
+
+                    <div class="col">
+                        <div class="card p-3">
+                            <img src="img/460c2-1gd71-f8cga-8225c-cd78g.jpg" class="card-img-top" alt="gitar1">
+                            <div class="card-body">
+                                <p class="card-text text-primary">Fender Player Tele MN TPL</p>
+                                <span class="card-text bg-success py-1 px-2 text-light rounded-3">15.050 ₺</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-3">
+                            <img src="img/d977f-9242e-7b3b6-g5a08-4gf3c.jpg" class="card-img-top" alt="gitar2">
+                            <div class="card-body">
+                                <p class="card-text text-primary">Fender Player Jazzmaster PF 3TSB</p>
+                                <span class="card-text bg-success py-1 px-2 text-light rounded-3">15.480 ₺</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-3">
+                            <img src="img/keman.jpg" class="card-img-top" alt="keman1">
+                            <div class="card-body">
+                                <p class="card-text text-primary">KEMAN, 1/8, PARLAK, KLAVYE KARARTILMIŞ</p>
+                                <span class="card-text bg-success py-1 px-2 text-light rounded-3">1.915 ₺</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-3">
+                            <img src="img/keman2.jpg" class="card-img-top" alt="keman2">
+                            <div class="card-body">
+                                <p class="card-text text-primary">KEMAN KUTULU: KNG JY-1509 3/4</p>
+                                <span class="card-text bg-success py-1 px-2 text-light rounded-3">2.120 ₺</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-3">
+                            <img src="img/bateri.jpg" class="card-img-top" alt="bateri1">
+                            <div class="card-body">
+                                <p class="card-text text-primary">TAMA SG50H6C-BK - Stagestar Black 5 Parça</p>
+                                <span class="card-text bg-success py-1 px-2 text-light rounded-3">13.370 ₺</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-3">
+                            <img src="img/bateri2.jpg" class="card-img-top" alt="bateri2">
+                            <div class="card-body">
+                                <p class="card-text text-primary">TAMA SG50H6C-WR - Stagestar Wine Red 5</p>
+                                <span class="card-text bg-success py-1 px-2 text-light rounded-3">13.370 ₺</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-3">
+                            <img src="img/piano.jpg" class="card-img-top" alt="piyano1">
+                            <div class="card-body">
+                                <p class="card-text text-primary">Korg LP380-BK Dijital Piyano</p>
+                                <span class="card-text bg-success py-1 px-2 text-light rounded-3">15.940 ₺</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card p-3">
+                            <img src="img/roland-rp501r-cr-gul-agaci-dijit-71657-1.jpg" class="card-img-top" alt="piyano2">
+                            <div class="card-body">
+                                <p class="card-text text-primary">ROLAND RP501R-CR Gül Ağacı Dijital Duvar</p>
+                                <span class="card-text bg-success py-1 px-2 text-light rounded-3">23.130 ₺</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- bootstrap javascript kodu -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
